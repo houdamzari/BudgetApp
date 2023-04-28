@@ -2,15 +2,13 @@
 <header class="bg-secondary text-white">
   <nav class="d-flex justify-content-between p-2 align-items-center text-reset">   
     <a href='/groups'><i class="fas fa-arrow-left fs-1 text-white"></i></a>
-    <h2 class="m-0 p-0">New Category</h2>
-    <%= form.submit "Save", class: "nav-link fs-2" %>
+    <h3 class="m-0 p-0">Add New Category</h2>
+    <%= form.submit "Savee", class: "nav-link fs-2" %>
   </nav> 
 </header>
-
   <% if group.errors.any? %>
     <div style="color: blue">
       <h2><%= pluralize(group.errors.count, "error") %> stopped this group from being saved:</h2>
-
       <ul>
         <% group.errors.each do |error| %>
           <li><%= error.full_message %></li>
@@ -18,8 +16,7 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="mt-3">
+  <div class="mt-4">
     <%= form.text_field :name, placeholder: "Name", class: "form-control rounded-0" %>
   </div>
 
