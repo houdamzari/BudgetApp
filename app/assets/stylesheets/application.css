@@ -16,5 +16,6 @@
 
  * {
   overflow: scroll;
+  color : white;
   scroll-behavior: auto;
  }
