@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  
   get "home/index"
   resources :entities
   resources :groups
@@ -14,4 +13,5 @@ Rails.application.routes.draw do
       root "home#index", as: :unauthenticated_root
     end
   end
+  
 end
