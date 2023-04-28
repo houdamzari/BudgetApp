@@ -1,15 +1,14 @@
 <%= form_with(model: entity) do |form| %>
 <header class="bg-primary text-white">
   <nav class="d-flex justify-content-between p-2 align-items-center text-reset">   
-    <a href="<%= entities_path %>"><i class="fas fa-arrow-left fs-1 text-white"></i></a>
-    <h2 class="m-0 p-0">New Category</h2>
+    <a href="<%= groups_path%>"><i class="fas fa-arrow-left fs-1 text-white"></i></a>
+    <h2 class="m-0 p-0">Add a new transaction</h2>
     <%= form.submit "Save", class: "nav-link fs-2" %>
   </nav> 
 </header>
   <% if entity.errors.any? %>
-    <div style="color: blue">
-      <h2><%= pluralize(entity.errors.count, "error") %>  stoppped this entity from being saved:</h2>
-
+    <div style="color: red">
+      <h2><%= pluralize(entity.errors.count, "error") %> stopped entity from being saved :</h2>
       <ul>
         <% entity.errors.each do |error| %>
           <li><%= error.full_message %></li>
@@ -17,17 +16,14 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="mt-4">
+  <div class="mt-3">
     <%= form.text_field :name, placeholder: "Name", class: "form-control rounded-0" %>
   </div>
-
   <div>
-    <%= form.number_field :amount, placeholder: "Enter a number", class: "form-control rounded-0" %>
+    <%= form.number_field :amount, placeholder: "Enter number", class: "form-control rounded-0" %>
   </div>
-
   <div>
-    <%= form.select :group_ids, @categories.collect {|cat| [cat.name, cat.id]}, { include_blank: false }, required: true, multiple: true, placeholder: "Select from Categories", class: "form-control rounded-0" %>
+    <%= form.select :group_ids, @categories.collect {|cat| [cat.name, cat.id]}, { include_blank: false }, required: true, multiple: true, placeholder: "Select From Categories", class: "form-control rounded-0" %>
 
   </div>
 <% end %>
