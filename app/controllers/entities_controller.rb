@@ -16,7 +16,7 @@ class EntitiesController < ApplicationController
   def edit
   end
 
-  def create
+ def create
     params = entity_params
     @entity = Entity.new(name: params[:name], amount: params[:amount])
     @entity.user_id = current_user.id
@@ -25,10 +25,9 @@ class EntitiesController < ApplicationController
       group = Group.find(id) unless id == ''
       @entity.groups.push(group) unless group.nil?
     end
-
     respond_to do |format|
       if @entity.save
-        format.html { redirect_to groups_url(params[:group_id]), notice: "This transaction was created succesfully." }
+        format.html { redirect_to groups_url(params[:group_id]), notice: 'This transaction was created successfully.' }
         format.json { render :show, status: :created, location: @entity }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -36,11 +35,10 @@ class EntitiesController < ApplicationController
       end
     end
   end
-
-  def update
+ def update
     respond_to do |format|
       if @entity.update(entity_params)
-        format.html { redirect_to entity_url(@entity), notice: "This transaction was updated successfully." }
+        format.html { redirect_to entity_url(@entity), notice: 'This transaction was updated successfully.' }
         format.json { render :show, status: :ok, location: @entity }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -48,12 +46,11 @@ class EntitiesController < ApplicationController
       end
     end
   end
-
   def destroy
     @entity.destroy
 
     respond_to do |format|
-      format.html { redirect_to  groups_url(params[:group_id]), notice: "This transaction was destryed successfuly." }
+      format.html { redirect_to groups_url(params[:group_id]), notice: "This transaction was destryed successfuly." }
       format.json { head :no_content }
     end
   end
