@@ -1,0 +1,25 @@
+<header class="bg-secondary text-white sticky-top">
+  <nav class="d-flex align-items-center  justify-content-between p-3 text-center">   
+    <button class="navbar-toggler" type="submit" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span class="text-white fa-solid fa-bars fs-1 "></span>
+    </button>
+    <div class="text-bg-dark offcanvas offcanvas-start " tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="  d-flex align-items-center offcanvas-header">
+        <h3 class="align-self-center m-0 p-0 ">Budget app</h3>
+        <button type="submit" class="btn-close btn-close-white " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav flex-grow justify-content-end -1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link fs-1" aria-current="page" href="<%= groups_path %>">Home</a>
+          </li>
+          <li class="nav-item">
+            <%= button_to "SignOut", destroy_user_session_path, method: :delete, class: "btn btn-outline-warning offcanvas-title mx-auto", id:"offcanvasDarkNavbarLabel" %>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h3 class="m-0 p-0">Categories</h3>
+    <i class="fa-solid fa-magnifying-glass text-white fs-1"></i>
+  </nav> 
+</header>
