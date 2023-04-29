@@ -23,7 +23,6 @@
     - [Usage](#usage)
     - [Run tests](#run-tests)
   - [👥 Authors ](#-authors-)
-  - [🔭 Future Features ](#-future-features-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [📝 License ](#-license-)
 <!-- - [🔭 Future Features](#future-features) -->
@@ -148,13 +147,6 @@ You can deploy this project using:
 
 - GitHub: [@houdamzari](https://github.com/houdamzari/)
 - LinkedIn: [Houda Mzari](https://www.linkedin.com/in/houda-mzari-2304401b1/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
