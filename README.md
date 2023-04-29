@@ -36,7 +36,7 @@
 
 ## video demo 🎥
 
-https://www.loom.com/share/17ffda76a1a8405998a38ec6b0081ca8
+https://www.loom.com/share/228e53a284324e46acfb747acb1cf39b
 ## Render Deploy 🚀
 
 [Live demo here](https://budgetapppp.onrender.com/)
