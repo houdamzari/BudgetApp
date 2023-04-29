@@ -140,6 +140,14 @@ You can deploy this project using:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- VIDEO DEMO -->
+
+https://www.loom.com/share/f28550759d01411fb6445e881c07bb7eRender Deploy 🚀
+
+<!-- LIVE DEMO -->
+
+https://budgetapppp.onrender.com/
+
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
