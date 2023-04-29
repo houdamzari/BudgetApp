@@ -13,7 +13,7 @@ default: &default
 
 development:
   <<: *default
-  database: budgetapp
+  database: budgetapp_developement
   username: postgres
   password: admin
   host: localhost
@@ -51,7 +51,6 @@ test:
 #
 production:
   <<: *default
-  database: budgetapp
-  username: postgres
-  password: <%= ENV['1234'] %>
-  port: 5432
+  database: budgetapp_production
+  username: budget
+  password: <%= ENV["BUDGET_APP_DATABASE_PASSWORD"] %>
