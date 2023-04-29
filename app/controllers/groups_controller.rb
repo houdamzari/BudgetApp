@@ -1,22 +1,20 @@
 class GroupsController < ApplicationController
-  before_action :set_group, only: %i[ show edit update destroy ]
+  before_action :set_group, only: %i[show edit update destroy]
 
   def index
     @groups = Group.includes(:entities).where(user_id: current_user.id)
     @groups = Group.order(created_at: :desc)
   end
 
-  def show
-  end
+  def show; end
 
   def new
     @group = Group.new
   end
 
-  def edit
-  end
+  def edit; end
 
- def create
+  def create
     @group = Group.new(group_params)
     @group.user_id = current_user.id
     respond_to do |format|
@@ -30,7 +28,7 @@ class GroupsController < ApplicationController
     end
   end
 
-   def destroy
+  def destroy
     @group.destroy
 
     respond_to do |format|
@@ -52,11 +50,12 @@ class GroupsController < ApplicationController
   end
 
   private
-    def set_group
-      @group = Group.find(params[:id])
-    end
 
-    def group_params
-      params.require(:group).permit(:name, :icon)
-    end
+  def set_group
+    @group = Group.find(params[:id])
+  end
+
+  def group_params
+    params.require(:group).permit(:name, :icon)
+  end
 end
