@@ -1,9 +1,7 @@
-<a name="readme-top" align="center"></a>
+<a name="readme-top"></a>
 
 <div align="center">
-  <h1>Budget app</h1>
-  <br/>
-
+  <h3><b>Hello-rails-react</b></h3>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -11,11 +9,10 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Budget app ](#-budget-app-)
+- [Hello-rails-react ](#hello-rails-react-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
-    - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
+  - [Key Features ](#key-features-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -24,50 +21,39 @@
     - [Run tests](#run-tests)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
+  - [Acknowledgments](#acknowledgments)
   - [📝 License ](#-license-)
-<!-- - [🔭 Future Features](#future-features) -->
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Budget app <a name="about-project"></a>
-This is a Budget app that serves adding transactions .
+# Hello-rails-react <a name="about-project"></a>
+
+> This web web app connects rails and react. It fetches random greetings
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
-Ruby on Rails
+- Ruby on Rails
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://www.ruby-lang.org/en/">Ruby on Rails</a></li>
+    <li><a href="https://rubyonrails.org/">Ruby On Rails</a></li>
   </ul>
 </details>
 
-<details>
-  <summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
-<!-- Features -->
+<!-- Key Features -->
 
-### Key Features <a name="key-features"></a>
-- A login page.
-- A registration page.
-- Managing budget
+## Key Features <a name="key-features"></a>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-## 🚀 Live Demo <a name="live-demo"></a>
-Not Deployed Yet.
+- [x] authentication
+- [x] Add new category
+- [x] Add new transactions .
 
 <!-- GETTING STARTED -->
 
@@ -76,95 +62,84 @@ Not Deployed Yet.
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
+
 In order to run this project you need:
 
-- To install ruby on your PC. You can read [this](https://rubyinstaller.org/downloads/) documentation on how to do so
-- To install postgresql on your PC. You can read [this](https://www.postgresql.org/) documentation on how to do so
-- Know how to navigate directories or folders at the CLI.
-- Know how to get the URL(https/ssh) of a repository on GitHub.
-- You should have a code editor installed, preferably VSCode
-- In order to run this project you need:
+- `Ruby --version 3.2.1`
+- `Ruby on Rails --version ~> 7.0.4`
+- `Postgresql`
 
 ### Setup
-In desired folder or directory in the CLI, run the command:
+
+Clone this repository to your desired folder:
 
 ```sh
-git clone git@github.com:houdamzari/BudgetApp.git
+  cd your_desired_folder
+  git clone https://github.com/houdamzari/BudgetApp
 ```
 
-Navigate into the cloned folder or repository by running the command:
-```sh
-cd BudgetApp
-```
-
-If VsCode is your default code editor, run:
-```sh
-code .
-```
-
-You are all set up!
 ### Install
 
-Install this project with:
+Install this project gems with:
 
-```sh
- bundle install
-``` 
+- After cloning type `cd budget-app`.
+- Run `bundle install` to install all gems.
+
 ### Usage
-
-To setup the database, run
-```sh
-rails db:drop db:create db:migrate
-```
 
 To run the project, execute the following command:
 
-```sh
-ruby bin/rails server
-```
+- Run `rails db:create` to create a new database
+- Run `rails db:migrate` to migrate the db and build the schema
+- Run `rails s` to start the server
 
 ### Run tests
 
-To run tests, run the following command:
+- Run `rspec` to run the tests
 
-```sh
-  rspec spec spec/[filename.rb]
-```
-
-<!-- ### Deployment
-
-You can deploy this project using:
-
-```sh
-
-```  -->
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
+
 👤 **Houda Mzari**
 
 - GitHub: [@houdamzari](https://github.com/houdamzari/)
 - LinkedIn: [Houda Mzari](https://www.linkedin.com/in/houda-mzari-2304401b1/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
+- [ ] **enhance design**
+- [ ] **Implement side menu**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/houdamzari/BudgetApp/issues)
+
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project give us a ⭐
+Give a ⭐️ if you like this project!
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- Credit to the original designer by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella)
 
 <!-- LICENSE -->
 
@@ -172,4 +147,4 @@ If you like this project give us a ⭐
 
 This project is [MIT](./LICENSE) licensed.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>

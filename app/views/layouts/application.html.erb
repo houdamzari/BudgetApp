@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Budgetapp</title>
+    <title>Myapp</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'  ; style-src 'self' 'unsafe-inline'; base-uri 'self' ; script-src-elem 'self' 'unsafe-inline' ;">
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+  
+<%= stylesheet_pack_tag 'application' %>
+  <%= javascript_pack_tag 'application' %>
   </head>
 
   <body>
