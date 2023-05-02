@@ -1,17 +1,9 @@
 Rails.application.routes.draw do
-  get "home/index"
-  resources :entities
-  resources :groups
-  devise_for :users
-
-  devise_scope :user do
-    authenticated :user do
-      root 'groups#index', as: :authenticated_root
-    end
-  
-    unauthenticated do
-      root "home#index", as: :unauthenticated_root
+  # Other routes
+  root 'home#index'
+  namespace :api do
+    namespace :v1 do
+      get 'greetings/random', to: 'greetings#random'
     end
   end
-  
 end

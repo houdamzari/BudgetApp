@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3><b>Budget App</b></h3>
+  <h3><b>Hello-rails-react</b></h3>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -9,9 +9,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [Budget App ](#budget-app-)
-  - [video demo 🎥](#video-demo-)
-  - [Render Deploy 🚀](#render-deploy-)
+- [Hello-rails-react ](#hello-rails-react-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
   - [Key Features ](#key-features-)
@@ -30,16 +28,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# Budget App <a name="about-project"></a>
+# Hello-rails-react <a name="about-project"></a>
 
-> This web web app allows users to create categories and manage transactions to each category.The app is deployed on Render.
+> This web web app connects rails and react. It fetches random greetings
 
-## video demo 🎥
-
-https://www.loom.com/share/228e53a284324e46acfb747acb1cf39b
-## Render Deploy 🚀
-
-[Live demo here](https://budgetapppp.onrender.com/)
 
 ## 🛠 Built With <a name="built-with"></a>
 
